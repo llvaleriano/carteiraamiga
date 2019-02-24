@@ -1,0 +1,202 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.7"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.7
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.7.xsd">
+
+    <changeSet author="leonardo.valeriano" id="00000000000001_carga_acoes">
+        <insert tableName="ativo"><column name="nome" value="Abbot"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ABTT34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Abbvie DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ABBV34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="ABC Brasil"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ABCB4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Accenture"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ACNB34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aco Altona"/></insert>
+        <insert tableName="acao"><column name="sigla" value="EALT3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aco Altona"/></insert>
+        <insert tableName="acao"><column name="sigla" value="EALT4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Advanced-DH"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ADHM3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AES Tietê"/></insert>
+        <insert tableName="acao"><column name="sigla" value="TIET3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AES Tietê"/></insert>
+        <insert tableName="acao"><column name="sigla" value="TIET4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AES Tietê"/></insert>
+        <insert tableName="acao"><column name="sigla" value="TIET11" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aetna Inc DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AETB34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Afluente T"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AFLT3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Andrade Gutierrez"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ANDG3B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AG Concessões"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ANDG4B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AG Part"/></insert>
+        <insert tableName="acao"><column name="sigla" value="CANT3B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="AG Part"/></insert>
+        <insert tableName="acao"><column name="sigla" value="CANT4B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aig Group DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AIGB34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alef"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALEF3B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc ON"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE5" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE6" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE7" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE8" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE11" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Consorc"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRGE12" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Financeira Alfa"/></insert>
+        <insert tableName="acao"><column name="sigla" value="CRIV3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Financeira Alfa"/></insert>
+        <insert tableName="acao"><column name="sigla" value="CRIV4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Holding"/></insert>
+        <insert tableName="acao"><column name="sigla" value="RPAD3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Holding"/></insert>
+        <insert tableName="acao"><column name="sigla" value="RPAD5" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Holding"/></insert>
+        <insert tableName="acao"><column name="sigla" value="RPAD6" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Invest"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRIV3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alfa Invest"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BRIV4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aliansce"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALSC3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aliperti"/></insert>
+        <insert tableName="acao"><column name="sigla" value="APTI3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Aliperti"/></insert>
+        <insert tableName="acao"><column name="sigla" value="APTI4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="ALL Norte"/></insert>
+        <insert tableName="acao"><column name="sigla" value="FRRN3B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="ALL Norte"/></insert>
+        <insert tableName="acao"><column name="sigla" value="FRRN5B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="ALL Norte"/></insert>
+        <insert tableName="acao"><column name="sigla" value="FRRN6B" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alliar ON"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AALR3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alpargatas"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALPA3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alpargatas"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALPA4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alphabet DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="GOGL34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alphabet DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="GOGL35" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alupar"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALUP3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alupar"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALUP4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Alupar"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ALUP11" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Amazon"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AMZO34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Amazonia"/></insert>
+        <insert tableName="acao"><column name="sigla" value="BAZA3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Ambev"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ABEV3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="American Air DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AALL34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="American Express"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AXPB34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Amgen"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AMGN34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Ampla Energ"/></insert>
+        <insert tableName="acao"><column name="sigla" value="CBEE3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Anima"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ANIM3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Apple"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AAPL34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="ArcelorMittal"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ARMT34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Arconic DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ARNC34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Arezzo"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ARZZ3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Atompar"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ATOM3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Att Inc DRN"/></insert>
+        <insert tableName="acao"><column name="sigla" value="ATTB34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Avon"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AVON34" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Azevedo"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AZEV3" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Azevedo"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AZEV4" /></insert>
+
+        <insert tableName="ativo"><column name="nome" value="Azul"/></insert>
+        <insert tableName="acao"><column name="sigla" value="AZUL4" /></insert>
+
+    </changeSet>
+
+</databaseChangeLog>

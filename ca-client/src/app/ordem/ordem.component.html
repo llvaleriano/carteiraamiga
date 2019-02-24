@@ -1,0 +1,59 @@
+<form [formGroup]="ordemForm" (ngSubmit)="onSubmit()">
+
+  <div class="ui-g-12 ui-md-4">
+    <span class="ui-g-3 ui-md-3">Ativo</span>
+    <p-autoComplete
+      formControlName="ativo"
+      field="sigla"
+      [suggestions]="sugestoesAtivos"
+      (completeMethod)="pesquisar($event)"
+      [inputStyle]="{'text-transform':'uppercase'}">
+    </p-autoComplete>
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+    <span class="ui-g-3 ui-md-3">Valor</span>
+    <input input type="text" pInputText currencyMask formControlName="valor"
+           [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+    <span class="ui-g-3 ui-md-3">Quantidade</span>
+    <input type="text" pInputText formControlName="quantidade">
+  </div>
+
+  <button type="submit" [disabled]="!ordemForm.valid">Salvar</button>
+</form>
+
+<!--
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-md-4">
+    <span>Ativo</span>
+    <vl-autocomplete-ativo></vl-autocomplete-ativo>
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+      <span>Valor</span>
+      <vl-input-moeda></vl-input-moeda>
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+    <span>Quantidade</span>
+    <vl-input-moeda></vl-input-moeda>
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+    <span>Data</span>
+    <p-calendar [(ngModel)]="date1"></p-calendar>
+  </div>
+
+  <div class="ui-g-12 ui-md-4">
+    <span>Tipo de operação</span>
+    <div class="ui-inputgroup">
+      <div class="ui-g-6"><p-radioButton name="group1" value="Compra" label="Compra" [(ngModel)]="val1" inputId="opt1"></p-radioButton></div>
+      <div class="ui-g-6"><p-radioButton name="group1" value="Venda" label="Venda" [(ngModel)]="val1" inputId="opt2"></p-radioButton></div>
+    </div>
+  </div>
+
+</div>
+-->
