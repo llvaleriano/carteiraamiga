@@ -89,6 +89,27 @@ export class DashboardComponent implements OnInit {
       this.startAnimationForLineChart(dailySalesChart);
 
 
+      const dataDailySalesChart1: any = {
+        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        series: [
+            [12, 17, 7, 17, 23, 18, 38]
+            ]
+      };
+
+      const optionsDailySalesChart1: any = {
+            lineSmooth: Chartist.Interpolation.cardinal({
+                tension: 0
+            }),
+            low: 0,
+            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
+        }
+
+        var dailySalesChart1 = new Chartist.Line('#dailySalesChart1', dataDailySalesChart1, optionsDailySalesChart1);
+
+        this.startAnimationForLineChart(dailySalesChart1);
+
+
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
       const dataCompletedTasksChart: any = {
@@ -111,6 +132,28 @@ export class DashboardComponent implements OnInit {
 
       // start animation for the Completed Tasks Chart - Line Chart
       this.startAnimationForLineChart(completedTasksChart);
+
+
+      const dataCompletedTasksChart1: any = {
+        labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
+        series: [
+            [230, 750, 450, 300, 280, 240, 200, 190]
+            ]
+      };
+
+    const optionsCompletedTasksChart1: any = {
+          lineSmooth: Chartist.Interpolation.cardinal({
+              tension: 0
+          }),
+          low: 0,
+          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          chartPadding: { top: 0, right: 0, bottom: 0, left: 0}
+      }
+
+      var completedTasksChart1 = new Chartist.Line('#completedTasksChart1', dataCompletedTasksChart1, optionsCompletedTasksChart1);
+
+      // start animation for the Completed Tasks Chart - Line Chart
+      this.startAnimationForLineChart(completedTasksChart1);
 
 
 
@@ -145,6 +188,38 @@ export class DashboardComponent implements OnInit {
 
       //start animation for the Emails Subscription Chart
       this.startAnimationForBarChart(websiteViewsChart);
+
+
+      var datawebsiteViewsChart1 = {
+        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+        series: [
+          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+
+        ]
+      };
+      var optionswebsiteViewsChart1 = {
+          axisX: {
+              showGrid: false
+          },
+          low: 0,
+          high: 1000,
+          chartPadding: { top: 0, right: 5, bottom: 0, left: 0}
+      };
+      var responsiveOptions1: any[] = [
+        ['screen and (max-width: 640px)', {
+          seriesBarDistance: 5,
+          axisX: {
+            labelInterpolationFnc: function (value) {
+              return value[0];
+            }
+          }
+        }]
+      ];
+      var websiteViewsChart1 = new Chartist.Bar('#websiteViewsChart1', datawebsiteViewsChart, optionswebsiteViewsChart, responsiveOptions);
+
+      //start animation for the Emails Subscription Chart
+      this.startAnimationForBarChart(websiteViewsChart1);
+
   }
 
 }
